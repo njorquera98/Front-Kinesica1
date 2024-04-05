@@ -1,5 +1,5 @@
 form {
-  max-width: 300px;
+  max-width: 400px;
   margin: 0 auto;
   padding: 20px;
   border: 1px solid #ccc;
@@ -13,7 +13,9 @@ label {
 }
 
 input[type="text"],
-input[type="password"] {
+input[type="email"],
+input[type="tel"],
+input[type="date"] {
   width: calc(100% - 12px);
   padding: 8px;
   margin-bottom: 10px;
@@ -23,8 +25,6 @@ input[type="password"] {
 }
 
 button[type="submit"] {
-  display: block;
-  margin: 0 auto; /* Centra el botón horizontalmente */
   background-color: #4CAF50;
   color: white;
   padding: 10px 15px;
@@ -35,4 +35,9 @@ button[type="submit"] {
 
 button[type="submit"]:hover {
   background-color: #45a049;
+}
+
+.error-message {
+  color: red;
+  font-size: 0.8em;
 }
