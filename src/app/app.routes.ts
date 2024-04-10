@@ -3,7 +3,7 @@ import { NuevoPacienteComponent } from './nuevo-paciente/nuevo-paciente.componen
 import { LogInComponent } from './log-in/log-in.component';
 
 export const routes: Routes = [
-  { path: 'paciente', component: NuevoPacienteComponent },
   { path: 'login', component: LogInComponent },
+  { path: 'paciente', component: NuevoPacienteComponent },
   { path: '', redirectTo: '/login', pathMatch: 'full' },
 ];

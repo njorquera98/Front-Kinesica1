@@ -1,37 +1,82 @@
 <div>
   <form>
-    <h2>Nuevo Paciente</h2>
+    <div class="card">
+      <div class="card-body">
+        <h2>Nuevo Paciente</h2>
+        <div class="input-group">
+          <mat-form-field appearance="fill" class="input">
+            <mat-label>Nombre:</mat-label>
+            <input matInput type="text" formControlName="nombre">
+          </mat-form-field>
 
-    <label for="nombre">Nombre:</label>
-    <input type="text" formControlName="nombre">
+          <mat-form-field appearance="fill" class="input">
+            <mat-label>Apellido:</mat-label>
+            <input matInput type="text" formControlName="apellido">
+          </mat-form-field>
+        </div>
 
-    <label for="apellido">Apellido:</label>
-    <input type="text" formControlName="apellido">
+        <div class="input-group">
+          <mat-form-field appearance="fill" class="input">
+            <mat-label>Teléfono:</mat-label>
+            <input matInput type="text" formControlName="telefono">
+          </mat-form-field>
 
-    <label for="telefono">Teléfono:</label>
-    <input type="text" formControlName="telefono">
+          <mat-form-field appearance="fill" class="input">
+            <mat-label>Correo electrónico:</mat-label>
+            <input matInput type="email" formControlName="correo">
+          </mat-form-field>
+        </div>
 
-    <label for="correo">Correo electrónico:</label>
-    <input type="email" formControlName="correo">
+        <div class="input-group">
+          <mat-form-field appearance="fill" class="input">
+            <mat-label>Fecha de Nacimiento:</mat-label>
+            <input matInput type="date" formControlName="fecha_nacimiento">
+          </mat-form-field>
 
-    <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
-    <input type="date" formControlName="fecha_nacimiento">
+          <mat-form-field appearance="fill" class="input">
+            <mat-label>Fecha de Ingreso:</mat-label>
+            <input matInput type="date" formControlName="fecha_ingreso">
+          </mat-form-field>
+        </div>
 
-    <label for="fecha_ingreso">Fecha de Ingreso:</label>
-    <input type="date" formControlName="fecha_ingreso">
+        <div class="input-group">
+          <mat-form-field appearance="fill" class="input">
+            <mat-label>Previsión:</mat-label>
+            <mat-select formControlName="prevision">
+              <mat-option value="CAPITAL">CAPITAL</mat-option>
+              <mat-option value="CUPRUM">CUPRUM</mat-option>
+              <mat-option value="HABITAT">HABITAT</mat-option>
+              <mat-option value="MODELO">MODELO</mat-option>
+              <mat-option value="PLANVITAL">PLANVITAL</mat-option>
+              <mat-option value="PROVIDA">PROVIDA</mat-option>
+              <mat-option value="UNO">UNO</mat-option>
+              <mat-option value="OTRA">OTRA (PARTICULAR)</mat-option>
+            </mat-select>
+          </mat-form-field>
 
-    <label for="prevision">Previsión:</label>
-    <input type="text" formControlName="prevision">
+          <mat-form-field appearance="fill" class="input">
+            <mat-label>Evaluación:</mat-label>
+            <input matInput type="text" formControlName="evaluacion">
+          </mat-form-field>
+        </div>
 
-    <label for="evaluacion">Evaluación:</label>
-    <input type="text" formControlName="evaluacion">
+        <div class="input-group">
+          <mat-form-field appearance="fill" class="input">
+            <mat-label>Objetivo:</mat-label>
+            <input matInput type="text" formControlName="objetivo">
+          </mat-form-field>
 
-    <label for="objetivo">Objetivo:</label>
-    <input type="text" formControlName="objetivo">
+          <mat-form-field appearance="fill" class="input">
+            <mat-label>Diagnóstico:</mat-label>
+            <input matInput type="text" formControlName="diagnostico">
+          </mat-form-field>
+        </div>
 
-    <label for="diagnostico">Diagnóstico:</label>
-    <input type="text" formControlName="diagnostico">
-
-    <button type="submit">Enviar</button>
-</form>
+        <div class="button-container">
+          <button mat-raised-button color="primary" type="submit">Ingresar</button>
+        </div>
+      </div>
+    </div>
+  </form>
 </div>
+

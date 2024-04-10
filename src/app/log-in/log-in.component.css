@@ -1,18 +1,52 @@
-.formulario {
-  max-width: 300px;
-  margin: 0 auto; /* Centra el formulario horizontalmente */
+.container {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://trisquelion.cl/wp-content/uploads/2023/02/EnriqueMonsalveFotografia-023-scaled.jpg');
+  background-size: cover;
+  background-position: center;
+  filter: blur(8px);
+  z-index: -1;
+}
+
+.logo {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  width: 150px;
+}
+
+mat-card {
+  position: relative;
+  max-width: 90%; /* Ajustado para que sea más receptivo */
+  width: 300px; /* Ancho predeterminado del formulario */
+  text-align: center;
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 5px;
-  background-color: #f9f9f9;
-
+  background-color: rgba(255, 255, 255, 0.8);
+  z-index: 1;
 }
 
-
-
-.btn-container {
-  display: flex;
-  justify-content: center; /* Centra horizontalmente el contenido */
+mat-form-field {
+  max-width: 100%; /* Hacemos que el mat-form-field ocupe todo el ancho disponible */
+  width: 100%; /* Hacemos que el mat-form-field ocupe todo el ancho disponible */
+  margin: 0 auto;
 }
 
-
+@media (min-width: 768px) {
+  /* Estilos para pantallas más grandes */
+  mat-card {
+    width: 400px; /* Ancho ajustado para pantallas más grandes */
+  }
+}

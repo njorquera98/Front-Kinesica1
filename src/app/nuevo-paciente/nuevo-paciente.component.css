@@ -1,43 +1,47 @@
-form {
-  max-width: 400px;
-  margin: 0 auto;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  background-color: #f9f9f9;
+.input-group .input {
+  flex: 1; /* Hace que los elementos dentro del grupo tengan el mismo ancho */
 }
 
-label {
-  display: block;
-  margin-bottom: 5px;
+.button-container {
+  text-align: center; /* Centra el contenido horizontalmente */
+  margin-top: 20px; /* Espaciado superior para separar del resto del formulario */
 }
 
-input[type="text"],
-input[type="email"],
-input[type="tel"],
-input[type="date"] {
-  width: calc(100% - 12px);
-  padding: 8px;
-  margin-bottom: 10px;
-  border: 1px solid #ccc;
-  border-radius: 3px;
-  box-sizing: border-box; /* Para incluir el padding en el ancho total */
+/* Estilos para la tarjeta */
+.card {
+  width: 95%; /* Ancho de la tarjeta */
+  background-color: #ffffff; /* Color de fondo */
+  border-radius: 8px; /* Borde redondeado */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+  margin: 0 auto; /* Centrar horizontalmente */
 }
 
+/* Estilos para el cuerpo de la tarjeta */
+.card-body {
+  padding: 5px; /* Espaciado interno */
+
+}
+
+/* Estilos para el título del formulario */
+h2 {
+  font-size: 24px; /* Tamaño de fuente */
+  margin-bottom: 20px; /* Espaciado inferior */
+}
+
+/* Estilos para los grupos de entrada */
+.input-group {
+  display: flex; /* Mostrar en línea */
+  flex-wrap: wrap; /* Permitir envoltura de contenido */
+  gap: 10px; /* Espaciado entre grupos de entrada */
+
+}
+
+/* Estilos para los campos de entrada */
+.mat-form-field {
+  width: calc(50% - 5px); /* Ancho de los campos (mitad del contenedor) */
+}
+
+/* Estilos para el botón de enviar */
 button[type="submit"] {
-  background-color: #4CAF50;
-  color: white;
-  padding: 10px 15px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-button[type="submit"]:hover {
-  background-color: #45a049;
-}
-
-.error-message {
-  color: red;
-  font-size: 0.8em;
+  width: 80%; /* Ancho completo del botón */
 }

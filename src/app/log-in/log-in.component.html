@@ -1,18 +1,38 @@
-<div class="formulario">
-  <mat-form-field>
-    <mat-label>Usuario</mat-label>
-    <input matInput>
-  </mat-form-field>
+<div class="container">
+  <!-- Capa para el fondo desenfocado -->
+  <div class="background"></div>
+  <!-- Contenido dentro del contenedor -->
+  <mat-card>
+    <mat-card-content>
+      <!-- Agregar el logo aquí -->
+      <img src="https://trisquelion.cl/wp-content/uploads/2023/03/trisquel-removebg-preview.png" alt="Logo de la aplicación" class="logo">
 
-  <mat-form-field>
-    <mat-label>Contraseña</mat-label>
-    <input matInput [type]="hide ? 'password' : 'text'">
-    <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
-      <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
-    </button>
-  </mat-form-field>
-
-  <div class="btn-container">
-    <button mat-flat-button color="primary" routerLink="/paciente">Iniciar sesión</button>
-  </div>
+        <!-- Formulario de inicio de sesión -->
+      <form #loginForm="ngForm" (ngSubmit)="onSubmit()">
+        <!--
+        <mat-error *ngIf="!loginValid">
+          El usuario y contraseña no son correctos
+        </mat-error>
+        -->
+        <mat-form-field>
+          <input matInput placeholder="Usuario" name="username" required>
+          <!--
+          <mat-error>
+            Por favor ingrese un correo válido
+          </mat-error>
+          -->
+        </mat-form-field>
+        <mat-form-field>
+          <input matInput type="password" placeholder="Contraseña" name="password" required>
+          <!--
+          <mat-error>
+            Por favor ingrese una contraseña válida
+          </mat-error>
+          -->
+        </mat-form-field>
+        <button mat-raised-button color="primary" routerLink="/paciente" >Iniciar Sesión</button>
+      </form>
+    </mat-card-content>
+  </mat-card>
 </div>
+
