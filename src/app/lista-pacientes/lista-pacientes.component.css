@@ -1,23 +1,29 @@
 h1 {
-  margin-top: 20px;
-  margin-left: 20px;
+  font-size: 24px; /* Tamaño de fuente */
   margin-bottom: 10px;
+}
+body {
+  margin: 0; /* Elimina el margen en todos los lados */
+  padding: 0; /* Asegura que no haya relleno */
+  background-color: #f4f4f4; /* Color de fondo */
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.5) 50%, transparent 50%); /* Degradado */
+  background-size: 100px 100px; /* Tamaño de los cuadrados */
 }
 
 .table-container {
+  padding-top: 20px;
   margin-left: 10px;
   margin-right: 10px;
 }
 
 .custom-table {
-  width: calc(100% - 10px); /* Ajuste según el margen */
   border-collapse: collapse;
   border: 1px solid #ddd;
 }
 
 .custom-header, .custom-cell {
   padding: 8px;
-  text-align: left;
+  text-align: center;
   border-bottom: 1px solid #ddd;
 }
 
@@ -25,7 +31,10 @@ h1 {
   background-color: #f2f2f2;
   font-weight: bold;
 }
-
+.example-button-row {
+  max-width: 600px;
+  margin-bottom: 10px;
+}
 .custom-header-row, .custom-row {
   background-color: #fff;
 }
@@ -36,7 +45,7 @@ h1 {
 
 .example-flex-container {
   display: flex;
-justify-content: flex-start;
+  justify-content: center;
 }
 
 .example-button-container {

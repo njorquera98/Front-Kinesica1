@@ -1,0 +1,73 @@
+h1 {
+  font-size: 24px; /* Tamaño de fuente */
+  margin-bottom: 10px;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.5) 50%, transparent 50%);
+  background-size: 100px 100px;
+}
+
+.datos-paciente {
+  font-size: 16px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.lista-sesiones {
+  font-size: 16px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
+
+.item {
+  padding: 10px;
+}
+
+.descripcion-wrapper {
+  max-width: 600px;
+  overflow-x: auto;
+}
+
+.descripcion {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #333;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.5) 50%, transparent 50%);
+    background-size: 100px 100px;
+  }
+  .datos-paciente {
+    font-size: 14px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    max-width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  .lista-sesiones {
+    display: grid;
+  }
+
+  .item {
+    padding: 10px;
+  }
+
+  .descripcion-wrapper {
+    margin: 20px auto;
+    padding: 20px;
+  }
+}

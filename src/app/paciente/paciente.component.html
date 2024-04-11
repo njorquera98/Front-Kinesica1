@@ -1,0 +1,30 @@
+<body>
+
+  <h1>Datos del Paciente</h1>
+
+  <div class="datos-paciente">
+    <div class="item"><strong>Nombre:</strong> {{ paciente.nombre }}</div>
+    <div class="item"><strong>Apellido:</strong> {{ paciente.apellido }}</div>
+    <div class="item"><strong>Edad:</strong> {{ paciente.edad }}</div>
+    <div class="item"><strong>Teléfono:</strong> {{ paciente.telefono }}</div>
+    <div class="item"><strong>Correo:</strong> {{ paciente.correo }}</div>
+    <div class="item"><strong>Previsión:</strong> {{ paciente.prevision }}</div>
+    <div class="item"><strong>Fecha de Nacimiento:</strong> {{ paciente.fechaNacimiento }}</div>
+    <div class="item"><strong>Fecha de Ingreso:</strong> {{ paciente.fechaIngreso }}</div>
+    <div class="item"><strong>Objetivo:</strong> {{ paciente.objetivo }}</div>
+    <div class="item"><strong>Evaluación:</strong> {{ paciente.evaluacion }}</div>
+    <div class="item"><strong>Diagnóstico:</strong> {{ paciente.diagnostico }}</div>
+  </div>
+  <br>
+  <h1>Lista de Sesiones</h1>
+
+  <div *ngFor="let sesion of sesiones" class="lista-sesiones">
+    <div class="item"><strong>Sesión:</strong> {{ sesion.sesion }}</div>
+    <div class="item"><strong>Fecha:</strong> {{ sesion.fecha }}</div>
+    <div class="item"><strong>Hora:</strong> {{ sesion.hora }}</div>
+    <div class="descripcion-wrapper">
+      <pre class="descripcion">{{ sesion.descripcion }}</pre>
+    </div>
+  </div>
+</body>
+

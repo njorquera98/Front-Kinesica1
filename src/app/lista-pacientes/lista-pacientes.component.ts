@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatTableModule } from '@angular/material/table';
 import { MatIconModule } from '@angular/material/icon';
+import { RouterLink, RouterOutlet } from '@angular/router';
 
 export interface PeriodicElement {
   nombre: string;
@@ -26,6 +27,8 @@ const ELEMENT_DATA: PeriodicElement[] = [
   selector: 'app-lista-pacientes',
   standalone: true,
   imports: [
+    RouterOutlet,
+    RouterLink,
     MatTableModule,
     MatIconModule,
     MatButtonModule,

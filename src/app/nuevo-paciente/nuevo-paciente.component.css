@@ -5,6 +5,7 @@
 .button-container {
   text-align: center; /* Centra el contenido horizontalmente */
   margin-top: 20px; /* Espaciado superior para separar del resto del formulario */
+  margin-bottom: 20px;
 }
 
 /* Estilos para la tarjeta */
@@ -18,12 +19,12 @@
 
 /* Estilos para el cuerpo de la tarjeta */
 .card-body {
-  padding: 5px; /* Espaciado interno */
+  padding: 10px; /* Espaciado interno */
 
 }
 
 /* Estilos para el título del formulario */
-h2 {
+h1 {
   font-size: 24px; /* Tamaño de fuente */
   margin-bottom: 20px; /* Espaciado inferior */
 }
