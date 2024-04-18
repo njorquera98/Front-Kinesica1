@@ -13,33 +13,19 @@
             <mat-label>Apellido:</mat-label>
             <input matInput type="text" formControlName="apellido">
           </mat-form-field>
-        </div>
 
-        <div class="input-group">
           <mat-form-field appearance="fill" class="input">
             <mat-label>Teléfono:</mat-label>
             <input matInput type="text" formControlName="telefono">
           </mat-form-field>
+        </div>
 
+        <div class="input-group">
           <mat-form-field appearance="fill" class="input">
             <mat-label>Correo electrónico:</mat-label>
             <input matInput type="email" formControlName="correo">
           </mat-form-field>
-        </div>
 
-        <div class="input-group">
-          <mat-form-field appearance="fill" class="input">
-            <mat-label>Fecha de Nacimiento:</mat-label>
-            <input matInput type="date" formControlName="fecha_nacimiento">
-          </mat-form-field>
-
-          <mat-form-field appearance="fill" class="input">
-            <mat-label>Fecha de Ingreso:</mat-label>
-            <input matInput type="date" formControlName="fecha_ingreso">
-          </mat-form-field>
-        </div>
-
-        <div class="input-group">
           <mat-form-field appearance="fill" class="input">
             <mat-label>Previsión:</mat-label>
             <mat-select formControlName="prevision">
@@ -55,8 +41,20 @@
           </mat-form-field>
 
           <mat-form-field appearance="fill" class="input">
-            <mat-label>Evaluación:</mat-label>
-            <input matInput type="text" formControlName="evaluacion">
+            <mat-label>Fecha de Nacimiento:</mat-label>
+            <input matInput type="date" formControlName="fecha_nacimiento">
+          </mat-form-field>
+        </div>
+
+        <div class="input-group">
+          <mat-form-field appearance="fill" class="input">
+            <mat-label>Fecha de Ingreso:</mat-label>
+            <input matInput type="date" formControlName="fecha_ingreso">
+          </mat-form-field>
+
+          <mat-form-field appearance="fill" class="input">
+            <mat-label>Diagnóstico:</mat-label>
+            <input matInput type="text" formControlName="diagnostico">
           </mat-form-field>
         </div>
 
@@ -67,13 +65,16 @@
           </mat-form-field>
 
           <mat-form-field appearance="fill" class="input">
-            <mat-label>Diagnóstico:</mat-label>
-            <input matInput type="text" formControlName="diagnostico">
+            <mat-label>Evaluación:</mat-label>
+            <input matInput type="text" formControlName="evaluacion">
           </mat-form-field>
         </div>
 
         <div class="button-container">
           <button mat-raised-button color="primary" type="submit">Enviar</button>
+        </div>
+        <div class="button-container">
+          <button mat-raised-button color="secundary" routerLink="/lista">Volver</button>
         </div>
       </div>
     </div>
