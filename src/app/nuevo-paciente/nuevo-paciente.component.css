@@ -43,6 +43,6 @@ h1 {
 }
 
 /* Estilos para el botón de enviar */
-button[type="submit"] {
-  width: 80%; /* Ancho completo del botón */
+button {
+  width: 40%; /* Ancho completo del botón */
 }
