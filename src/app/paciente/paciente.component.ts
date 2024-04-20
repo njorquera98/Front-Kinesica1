@@ -1,13 +1,13 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { MatButtonModule } from '@angular/material/button';
+import { MaterialModule } from '../material/material.module';
 
 @Component({
   selector: 'app-paciente',
   standalone: true,
   imports: [
-    CommonModule,
-    MatButtonModule,
+    MaterialModule,
+    CommonModule
   ],
   templateUrl: './paciente.component.html',
   styleUrl: './paciente.component.css'
